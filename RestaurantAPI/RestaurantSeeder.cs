@@ -27,7 +27,38 @@ namespace RestaurantAPI
 
         private IEnumerable<Restaurant> GetRestaurants()
         {
-            var restaurants = new List<Restaurant>();
+            var restaurants = new List<Restaurant>()
+            {
+                new Restaurant()
+                {
+                    Name = "KFC",
+                    Category = "Fast Food",
+                    Description = "Kentucky Fried Chicken",
+                    ContactEmail = "contact@kfc.com",
+                    HasDelivery = true,
+                    Dishes = new List<Dish>
+                    {
+                        new Dish()
+                        {
+                            Name = "Nashville Hot Chicken",
+                            Price = 10.30M,
+                        },
+                        new Dish()
+                        {
+                            Name = "Chicken Nuggets",
+                            Price= 5.30M,
+                        }
+                    },
+                    Address = new Address()
+                    {
+                        City = "Kraków",
+                        Street = "Długa 5",
+                        PostalCode = "30-001"
+                    }
+                }
+            };
+
+
 
             return restaurants;
         }
