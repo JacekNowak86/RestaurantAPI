@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using RestaurantAPI.Entities;
+using RestaurantAPI.Middleware;
 using RestaurantAPI.Services;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,7 @@ namespace RestaurantAPI
             services.AddScoped<RestaurantSeeder>();
             services.AddAutoMapper(this.GetType().Assembly);
             services.AddScoped<IRestaurantService,RestaurantService>();
+            services.AddScoped<ErrrorHandlingMiddleware>();
             
         }
 
@@ -50,6 +52,7 @@ namespace RestaurantAPI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+            app.UseMiddleware<ErrrorHandlingMiddleware>();
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

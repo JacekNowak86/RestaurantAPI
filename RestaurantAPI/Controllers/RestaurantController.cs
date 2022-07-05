@@ -11,6 +11,7 @@ using System.Linq;
 namespace RestaurantAPI.Controllers
 {
     [Route("api/restaurant")]
+    [ApiController]
     public class RestaurantController : ControllerBase
     {
         private readonly IRestaurantService _restaurantService;
@@ -28,6 +29,20 @@ namespace RestaurantAPI.Controllers
         //    _dbContext = dbContext;
         //    _mapper = mapper;
         //}
+        [HttpPut("{id}")]
+        public ActionResult Update([FromBody] UpdateRestaurantDto dto, [FromRoute] int id)
+        {
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
+            /*var isUpdated =*/_restaurantService.Update(id,dto);
+            //if (!isUpdated)
+            //{
+            //    return NotFound();
+            //}
+            return Ok();
+        }
         [HttpDelete("{id}")]
         public ActionResult Delete([FromRoute] int id)
         {
@@ -41,10 +56,10 @@ namespace RestaurantAPI.Controllers
         [HttpPost]
         public ActionResult CreateRestaurant([FromBody]CreateRestaurantDto dto)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
             var id =_restaurantService.Create(dto);
             //var restaurant = _mapper.Map<Restaurant>(dto);
             //_dbContext.Restaurants.Add(restaurant);
