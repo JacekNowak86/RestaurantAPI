@@ -9,3 +9,17 @@ Login failed for user 'LAPTOP-U0M0B5GC\Jacek'.
 2022-07-05 20:53:20.3128|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Cannot open database "estaurantDB" requested by the login. The login failed.
 Login failed for user 'LAPTOP-U0M0B5GC\Jacek'.
 2022-07-05 21:09:20.1886|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Restaurant not found
+2022-07-07 22:53:37.8347|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 22:55:30.3523|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 22:57:25.7405|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 22:58:52.1878|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 22:59:06.3079|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 23:03:01.6520|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 23:06:55.7192|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 23:07:33.8055|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 23:10:03.0116|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 23:10:15.6908|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 23:14:19.2060|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 23:17:48.0849|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 23:29:58.9432|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-07-07 23:31:41.9538|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
