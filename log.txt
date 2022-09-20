@@ -23,3 +23,6 @@ Login failed for user 'LAPTOP-U0M0B5GC\Jacek'.
 2022-07-07 23:17:48.0849|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
 2022-07-07 23:29:58.9432|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
 2022-07-07 23:31:41.9538|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Object reference not set to an instance of an object.
+2022-08-18 21:32:07.2042|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Nullable object must have a value.
+2022-08-18 21:37:20.4516|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Nullable object must have a value.
+2022-08-28 21:18:47.2025|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Nullable object must have a value.

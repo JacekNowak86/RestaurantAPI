@@ -35,7 +35,7 @@ namespace RestaurantAPI.Services
         {
             var newUser = new User() {
                 Email = dto.Email,
-                DateOfBirth = dto.DateOfBith,
+                DateOfBirth = dto.DateOfBirth,
                 Nationality = dto.Nationality,
                 RoleId = dto.RoleId
             };
@@ -62,9 +62,14 @@ namespace RestaurantAPI.Services
                 new Claim(ClaimTypes.NameIdentifier,user.Id.ToString()),
                 new Claim(ClaimTypes.Name,$"{user.FirstName} {user.LastName}"),
                 new Claim(ClaimTypes.Role,$"{user.Role.Name}"),
-                new Claim("DateOfBith", user.DateOfBirth.Value.ToString("yyyy-MM-dd")),
-                new Claim("Nationality", user.Nationality)
+                new Claim("DateOfBirth", user.DateOfBirth.Value.ToString("yyyy-MM-dd")),
+                
             };
+            if (!string.IsNullOrEmpty(user.Nationality))
+            {
+                claims.Add(new Claim("Nationality", user.Nationality));
+            }
+
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_authenticationSettings.JwtKey));
             var cred = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
             var expires = DateTime.Now.AddDays(_authenticationSettings.JwtExpireDays);
