@@ -79,7 +79,7 @@ namespace RestaurantAPI.Controllers
         [Authorize(Policy = "Atleast20")]
         
 
-        public ActionResult<IEnumerable<RestaurantDto>> GetAll()
+        public ActionResult<IEnumerable<RestaurantDto>> GetAll([FromQuery]RestaurantQuery query/*string searchPhrase, [FromQuery]int pageNumber, [FromQuery]int pageSize*/)
         {
             //var restaurants = _dbContext.Restaurants.Include(r=>r.Address).Include(r=>r.Dishes).ToList();
             //var restaurantsDto = restaurants.Select(x => new RestaurantDto()
@@ -89,7 +89,7 @@ namespace RestaurantAPI.Controllers
             //    City = x.Address.City,
             //});
             //var restaurantsDto = _mapper.Map<List<RestaurantDto>>(restaurants);
-            var restaurantsDto = _restaurantService.GetAll();
+            var restaurantsDto = _restaurantService.GetAll(query/*searchPhrase*/);
             return Ok(restaurantsDto);
         }
         [HttpGet("{id}")]

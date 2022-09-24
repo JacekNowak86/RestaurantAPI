@@ -26,3 +26,8 @@ Login failed for user 'LAPTOP-U0M0B5GC\Jacek'.
 2022-08-18 21:32:07.2042|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Nullable object must have a value.
 2022-08-18 21:37:20.4516|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Nullable object must have a value.
 2022-08-28 21:18:47.2025|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Nullable object must have a value.
+2022-09-20 22:14:34.3300|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.
+2022-09-20 22:16:42.4830|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.
+2022-09-24 18:36:08.9535|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Value cannot be null. (Parameter 'key')
+2022-09-24 18:37:03.5144|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Value cannot be null. (Parameter 'key')
+2022-09-24 18:37:28.5094|ERROR|RestaurantAPI.Middleware.ErrrorHandlingMiddleware|Value cannot be null. (Parameter 'key')
